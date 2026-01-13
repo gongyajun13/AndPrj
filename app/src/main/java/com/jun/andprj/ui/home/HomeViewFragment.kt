@@ -1,6 +1,5 @@
 package com.jun.andprj.ui.home
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,8 +7,7 @@ import com.jun.andprj.databinding.FragmentHomeViewBinding
 import com.jun.andprj.ui.notify.NotifyDemoActivity
 import com.jun.andprj.ui.recycler.RecyclerLayoutActivity
 import com.jun.andprj.ui.tool.WebViewDemoActivity
-import com.jun.core.common.result.AppResult
-import com.jun.core.ui.base.ActivityManager
+import com.jun.core.ui.base.utils.ActivityManager
 import com.jun.core.ui.base.BaseFragment
 
 /**

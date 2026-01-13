@@ -11,6 +11,11 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.viewbinding.ViewBinding
+import com.jun.core.ui.base.callback.FragmentCallback
+import com.jun.core.ui.base.utils.BackPressHandler
+import com.jun.core.ui.base.utils.FragmentVisibilityManager
+import com.jun.core.ui.base.utils.KeyboardManager
+import com.jun.core.ui.base.utils.MessageNotifier
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 

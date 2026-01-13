@@ -1,10 +1,11 @@
-package com.jun.core.ui.base
+package com.jun.core.ui.base.utils
 
 import android.app.Activity
 import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Process
 import androidx.core.app.ActivityCompat
 import timber.log.Timber
 import java.util.concurrent.CopyOnWriteArrayList
@@ -189,7 +190,7 @@ object ActivityManager {
         Timber.d("[ActivityManager] 开始退出应用")
         finishAllActivities()
         // 退出进程
-        android.os.Process.killProcess(android.os.Process.myPid())
+        Process.killProcess(Process.myPid())
     }
     
     /**

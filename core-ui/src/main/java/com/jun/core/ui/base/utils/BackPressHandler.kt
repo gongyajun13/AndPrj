@@ -1,4 +1,4 @@
-package com.jun.core.ui.base
+package com.jun.core.ui.base.utils
 
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.OnBackPressedDispatcher

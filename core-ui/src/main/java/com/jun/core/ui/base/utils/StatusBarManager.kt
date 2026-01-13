@@ -1,4 +1,4 @@
-package com.jun.core.ui.base
+package com.jun.core.ui.base.utils
 
 import android.view.Window
 import android.view.WindowManager

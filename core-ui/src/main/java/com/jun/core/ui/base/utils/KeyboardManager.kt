@@ -1,7 +1,8 @@
-package com.jun.core.ui.base
+package com.jun.core.ui.base.utils
 
 import android.app.Activity
 import android.view.View
+import androidx.fragment.app.Fragment
 import com.jun.core.ui.extension.hideKeyboard
 import com.jun.core.ui.extension.isKeyboardVisible
 
@@ -22,7 +23,7 @@ object KeyboardManager {
     /**
      * 隐藏软键盘（Fragment）
      */
-    fun hideKeyboard(fragment: androidx.fragment.app.Fragment) {
+    fun hideKeyboard(fragment: Fragment) {
         fragment.activity?.let { hideKeyboard(it) }
     }
     

@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat
 import com.jun.andprj.R
 import com.jun.andprj.databinding.ActivityWebViewDemoBinding
 import com.jun.core.common.config.WebViewConfig
-import com.jun.core.ui.base.ActivityManager
+import com.jun.core.ui.base.utils.ActivityManager
 import com.jun.core.ui.webview.BaseWebViewActivity
 import com.jun.core.ui.webview.WebViewCacheUtils
 import com.jun.core.ui.webview.X5WebViewHelper
@@ -17,10 +17,8 @@ import com.jun.core.ui.webview.bridge.JsBridgeHandlerRegistry
 import com.jun.core.ui.webview.download.WebViewDownloadInterceptor
 import com.jun.core.ui.webview.scheme.CustomSchemeHandler
 import com.jun.core.network.client.NetworkClient
-import com.jun.core.common.extension.formatFileSize
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
-import java.io.File
 import timber.log.Timber
 
 /**

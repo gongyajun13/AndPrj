@@ -1,4 +1,4 @@
-package com.jun.core.ui.base
+package com.jun.core.ui.base.utils
 
 import android.content.DialogInterface
 import android.os.Handler
@@ -6,6 +6,7 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.jun.core.ui.base.BaseDialog
 import timber.log.Timber
 
 /**

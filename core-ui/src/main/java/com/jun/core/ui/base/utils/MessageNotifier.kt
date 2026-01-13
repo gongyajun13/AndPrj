@@ -1,4 +1,4 @@
-package com.jun.core.ui.base
+package com.jun.core.ui.base.utils
 
 import android.view.View
 import com.jun.core.common.util.notify.UiNotifierManager

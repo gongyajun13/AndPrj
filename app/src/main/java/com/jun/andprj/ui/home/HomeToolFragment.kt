@@ -1,6 +1,5 @@
 package com.jun.andprj.ui.home
 
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.jun.andprj.databinding.FragmentHomeToolBinding
@@ -12,7 +11,7 @@ import com.jun.andprj.ui.tool.ImageUtilsDemoActivity
 import com.jun.andprj.ui.tool.AppUpdateActivity
 import com.jun.andprj.ui.tool.NetworkDemoActivity
 import com.jun.andprj.ui.tool.ValidatorDemoActivity
-import com.jun.core.ui.base.ActivityManager
+import com.jun.core.ui.base.utils.ActivityManager
 import com.jun.core.ui.base.BaseFragment
 
 /**

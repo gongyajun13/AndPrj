@@ -4,7 +4,7 @@ import android.app.Application
 import com.jun.core.common.util.notify.ToastUiNotifier
 import com.jun.core.common.util.notify.UiNotifierManager
 import com.jun.core.network.loading.LoadingManager
-import com.jun.core.ui.base.ActivityManager
+import com.jun.core.ui.base.utils.ActivityManager
 import com.jun.core.ui.base.SimpleLoadingDialog
 import com.jun.core.ui.webview.X5WebViewHelper
 import dagger.hilt.android.HiltAndroidApp
