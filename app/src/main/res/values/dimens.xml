@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+        屏幕适配尺寸定义
+        基于 SmallestWidth 限定符方案
+        适用于所有手机设备（默认）
+    -->
+    
+    <!-- ========== 文字大小 ========== -->
+    <dimen name="text_size_extra_small">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_title">22sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    
+    <!-- ========== 间距 ========== -->
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">12dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_extra_large">24dp</dimen>
+    
+    <!-- ========== 外边距 ========== -->
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_extra_large">24dp</dimen>
+    
+    <!-- ========== 图标大小 ========== -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_normal">24dp</dimen>
+    <dimen name="icon_size_medium">32dp</dimen>
+    <dimen name="icon_size_large">48dp</dimen>
+    <dimen name="icon_size_extra_large">64dp</dimen>
+    
+    <!-- ========== 按钮高度 ========== -->
+    <dimen name="button_height_small">36dp</dimen>
+    <dimen name="button_height_normal">44dp</dimen>
+    <dimen name="button_height_large">52dp</dimen>
+    
+    <!-- ========== 列表项高度 ========== -->
+    <dimen name="list_item_height_small">40dp</dimen>
+    <dimen name="list_item_height_normal">48dp</dimen>
+    <dimen name="list_item_height_medium">56dp</dimen>
+    <dimen name="list_item_height_large">64dp</dimen>
+    
+    <!-- ========== 圆角 ========== -->
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius_normal">8dp</dimen>
+    <dimen name="corner_radius_medium">12dp</dimen>
+    <dimen name="corner_radius_large">16dp</dimen>
+    <dimen name="corner_radius_extra_large">24dp</dimen>
+    
+    <!-- ========== 分割线 ========== -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_height_thick">2dp</dimen>
+    
+    <!-- ========== 工具栏 ========== -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="tab_bar_height">56dp</dimen>
+    
+    <!-- ========== 卡片 ========== -->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_elevation_raised">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+    <!-- ========== 输入框 ========== -->
+    <dimen name="input_height">48dp</dimen>
+    <dimen name="input_padding_horizontal">16dp</dimen>
+    <dimen name="input_padding_vertical">12dp</dimen>
+    
+    <!-- ========== 对话框 ========== -->
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+    
+    <!-- ========== 图片 ========== -->
+    <dimen name="image_size_small">40dp</dimen>
+    <dimen name="image_size_normal">64dp</dimen>
+    <dimen name="image_size_medium">96dp</dimen>
+    <dimen name="image_size_large">128dp</dimen>
+    <dimen name="image_size_avatar">48dp</dimen>
+    
+    <!-- ========== 网格间距 ========== -->
+    <dimen name="grid_spacing_small">8dp</dimen>
+    <dimen name="grid_spacing_normal">12dp</dimen>
+    <dimen name="grid_spacing_large">16dp</dimen>
+    
+    <!-- ========== 最大宽度限制（用于大屏设备） ========== -->
+    <dimen name="max_content_width">600dp</dimen>
+    <dimen name="max_content_width_wide">840dp</dimen>
+    
+    <!-- ========== 特殊尺寸 ========== -->
+    <dimen name="popup_item_width">120dp</dimen>
+    <dimen name="card_height_feature">80dp</dimen>
+</resources>
+

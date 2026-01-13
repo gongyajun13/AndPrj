@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 标题栏（固定） -->
+    <com.jun.core.ui.widget.CenterToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:coreui_titleText="图片工具示例"
+        app:coreui_titleTextColor="@android:color/white"
+        app:coreui_titleTextSize="@dimen/text_size_large"
+        app:coreui_backgroundColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 可滚动内容区域 -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 测试 View（用于截图） -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTestView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E3F2FD"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="测试 View（用于截图演示）"
+                        android:textColor="#1976D2"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_extra_small"
+                        android:text="点击下方按钮可以将此 View 保存为图片"
+                        android:textColor="#64B5F6"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ImageUtils 操作按钮 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImageUtils"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ImageUtils 功能"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCreateTestImage"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="创建测试图片" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetImageInfo"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="刷新图片信息" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEncodeBase64"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="Base64 编码" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDecodeBase64"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="Base64 解码" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ViewExtensions 操作按钮 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewExtensions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ViewExtensions 功能"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewToBitmap"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="View 转 Bitmap" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewToBitmapCustomSize"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="View 转 Bitmap（自定义尺寸）" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSaveViewToGallery"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="保存 View 到相册" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSaveViewRegionToGallery"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="保存 View 区域到相册" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSaveTestViewToGallery"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="保存 View（自定义尺寸）到相册" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 图片压缩操作按钮 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCompress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片压缩功能"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCompressBySize"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="按尺寸压缩（400x300）" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCompressByQuality"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="按质量压缩（质量50）" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCompressByFileSize"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="按文件大小压缩（100KB）" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCompressAndSave"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="压缩并保存到相册" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 信息展示区域 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="功能演示结果"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <!-- RecyclerView 放在 NestedScrollView 中，需要设置固定高度或使用 wrap_content -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="#F5F5F5"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:padding="@dimen/padding_small" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

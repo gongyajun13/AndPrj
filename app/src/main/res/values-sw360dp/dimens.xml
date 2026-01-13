@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+        小屏手机适配（最小宽度 360dp）
+        覆盖大部分小屏手机，如：320x480, 360x640 等
+    -->
+    
+    <!-- 文字大小略小 -->
+    <dimen name="text_size_normal">13sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    
+    <!-- 间距略小 -->
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_medium">14dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_medium">14dp</dimen>
+    
+    <!-- 按钮高度略小 -->
+    <dimen name="button_height_normal">42dp</dimen>
+    
+    <!-- 对话框宽度 -->
+    <dimen name="dialog_width">260dp</dimen>
+</resources>
+

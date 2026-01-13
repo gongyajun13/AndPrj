@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义 Toast 背景 & 文本颜色 -->
+    <color name="coreui_toast_bg">#CC333333</color>
+    <color name="coreui_toast_text">#FFFFFFFF</color>
+
+    <!-- 消息提示类型颜色 -->
+    <color name="coreui_notify_info_bg">#80000000</color>      <!-- 信息：黑色 -->
+    <color name="coreui_notify_success_bg">#CC4CAF50</color>   <!-- 成功：绿色 -->
+    <color name="coreui_notify_error_bg">#CCF44336</color>     <!-- 错误：红色 -->
+    <color name="coreui_notify_warning_bg">#CCFF9800</color>   <!-- 警告：橙色 -->
+    <color name="coreui_notify_text">#FFFFFFFF</color>         <!-- 文本颜色：白色 -->
+
+
+</resources>
+
+

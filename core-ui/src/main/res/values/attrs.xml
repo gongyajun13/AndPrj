@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用居中标题 Toolbar 属性 -->
+    <declare-styleable name="CoreUiCenterToolbar">
+        <!-- 左侧文字 -->
+        <attr name="coreui_leftText" format="string" />
+        <!-- 左侧图标 -->
+        <attr name="coreui_leftIcon" format="reference" />
+
+        <!-- 右侧文字 -->
+        <attr name="coreui_rightText" format="string" />
+        <!-- 右侧图标 -->
+        <attr name="coreui_rightIcon" format="reference" />
+
+        <!-- 标题文本 -->
+        <attr name="coreui_titleText" format="string" />
+
+        <!-- 文字大小（sp） -->
+        <attr name="coreui_leftTextSize" format="dimension" />
+        <attr name="coreui_titleTextSize" format="dimension" />
+        <attr name="coreui_rightTextSize" format="dimension" />
+
+        <!-- 文字颜色 -->
+        <attr name="coreui_leftTextColor" format="color" />
+        <attr name="coreui_titleTextColor" format="color" />
+        <attr name="coreui_rightTextColor" format="color" />
+
+        <!-- 字体资源（font） -->
+        <attr name="coreui_leftTextFont" format="reference" />
+        <attr name="coreui_titleTextFont" format="reference" />
+        <attr name="coreui_rightTextFont" format="reference" />
+
+        <!-- 图标尺寸 -->
+        <attr name="coreui_leftIconSize" format="dimension" />
+        <attr name="coreui_rightIconSize" format="dimension" />
+
+        <!-- 图标 tint 颜色 -->
+        <attr name="coreui_leftIconTint" format="color" />
+        <attr name="coreui_rightIconTint" format="color" />
+
+        <!-- 背景色 -->
+        <attr name="coreui_backgroundColor" format="color" />
+    </declare-styleable>
+
+    <!-- 底部 TabBar 属性 -->
+    <declare-styleable name="CoreUiBottomTabBar">
+        <!-- 选中/未选中文本颜色 -->
+        <attr name="coreui_tabTextColor" format="color" />
+        <attr name="coreui_tabTextColorSelected" format="color" />
+
+        <!-- 文本大小 -->
+        <attr name="coreui_tabTextSize" format="dimension" />
+
+        <!-- 图标 tint 颜色 -->
+        <attr name="coreui_tabIconTint" format="color" />
+        <attr name="coreui_tabIconTintSelected" format="color" />
+
+        <!-- 图标尺寸 -->
+        <attr name="coreui_tabIconSize" format="dimension" />
+
+        <!-- Tab 高度 -->
+        <attr name="coreui_tabHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    app:cardCornerRadius="@dimen/corner_radius_normal"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding">
+
+        <TextView
+            android:id="@+id/tvKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_small"
+            android:text="Value"
+            android:textColor="#2196F3"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="#F5F5F5"
+            android:fontFamily="monospace"
+            android:padding="@dimen/padding_small"
+            android:text="代码"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

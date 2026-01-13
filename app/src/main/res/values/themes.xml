@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme using Material 3 -->
+    <style name="Theme.AndPrj" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/purple_200</item>
+        <item name="colorOnPrimaryContainer">@color/purple_700</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/teal_200</item>
+        <item name="colorOnSecondaryContainer">@color/teal_700</item>
+        <!-- Surface colors. -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        <!-- Error color. -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/error</item>
+        <item name="colorOnErrorContainer">@color/white</item>
+        <!-- Background color. -->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Material3 需要的其他属性 -->
+        <item name="colorTertiary">@color/purple_500</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/purple_200</item>
+        <item name="colorOnTertiaryContainer">@color/purple_700</item>
+    </style>
+
+    <!-- 自定义按钮样式：增大字体 -->
+    <style name="Widget.AndPrj.Button.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+</resources>

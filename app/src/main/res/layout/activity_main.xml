@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <!-- 内容-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomTabBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- 底部 TabBar -->
+    <com.jun.core.ui.widget.BottomTabBar
+        android:id="@+id/bottomTabBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tab_bar_height"
+        android:background="?attr/colorPrimary"
+        app:coreui_tabIconSize="@dimen/icon_size_normal"
+        app:coreui_tabIconTint="@color/coreui_tab_icon_default"
+        app:coreui_tabIconTintSelected="@color/coreui_tab_icon_selected"
+        app:coreui_tabTextColor="@color/coreui_tab_text_default"
+        app:coreui_tabTextColorSelected="@color/coreui_tab_text_selected"
+        app:coreui_tabTextSize="@dimen/text_size_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

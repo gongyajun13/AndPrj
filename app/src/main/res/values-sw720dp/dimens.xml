@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+        大屏平板适配（最小宽度 720dp）
+        覆盖 10 寸平板设备
+    -->
+    
+    <!-- 文字大小进一步增大 -->
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_title">26sp</dimen>
+    <dimen name="text_size_headline">30sp</dimen>
+    
+    <!-- 间距进一步增大 -->
+    <dimen name="padding_normal">20dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+    <dimen name="padding_large">28dp</dimen>
+    <dimen name="margin_normal">20dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_large">28dp</dimen>
+    
+    <!-- 图标大小进一步增大 -->
+    <dimen name="icon_size_normal">32dp</dimen>
+    <dimen name="icon_size_medium">40dp</dimen>
+    
+    <!-- 按钮高度进一步增大 -->
+    <dimen name="button_height_normal">52dp</dimen>
+    <dimen name="button_height_large">60dp</dimen>
+    
+    <!-- 工具栏高度 -->
+    <dimen name="toolbar_height">72dp</dimen>
+    <dimen name="tab_bar_height">72dp</dimen>
+    
+    <!-- 对话框宽度进一步增大 -->
+    <dimen name="dialog_width">500dp</dimen>
+    <dimen name="dialog_padding">40dp</dimen>
+    
+    <!-- 卡片内边距进一步增大 -->
+    <dimen name="card_padding">32dp</dimen>
+</resources>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:padding="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/tvLinear"
+        android:layout_width="@dimen/popup_item_width"
+        android:layout_height="@dimen/list_item_height_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium"
+        android:text="线性布局"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="#222222"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="#E0E0E0"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/tvGrid"
+        android:layout_width="@dimen/popup_item_width"
+        android:layout_height="@dimen/list_item_height_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium"
+        android:text="网格布局"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="#222222"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="#E0E0E0"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/tvStaggered"
+        android:layout_width="@dimen/popup_item_width"
+        android:layout_height="@dimen/list_item_height_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium"
+        android:text="瀑布流布局"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="#222222"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>
+

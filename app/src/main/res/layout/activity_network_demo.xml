@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 标题栏 -->
+    <com.jun.core.ui.widget.CenterToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:coreui_titleText="网络请求示例"
+        app:coreui_titleTextColor="@android:color/white"
+        app:coreui_titleTextSize="@dimen/text_size_large"
+        app:coreui_backgroundColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 可滚动内容区域 -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 操作按钮区域 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缓存策略"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCachePolicyNoCache"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="NO_CACHE - 不使用缓存" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCachePolicyCacheOnly"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="CACHE_ONLY - 只使用缓存" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCachePolicyCacheFirst"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="CACHE_FIRST - 优先缓存" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCachePolicyNetworkFirst"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="NETWORK_FIRST - 优先网络" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCachePolicyCacheAndNetwork"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="CACHE_AND_NETWORK - 缓存+网络" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:background="#E0E0E0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网络请求操作"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetArticleList"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="获取文章列表" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetBanner"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="获取Banner" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetFriend"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="获取常用网站" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetHotKey"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="获取搜索热词" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetTopArticles"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="获取置顶文章" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGetTree"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="获取体系数据" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:background="#E0E0E0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BaseUrl 切换"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSwitchBaseUrlProduction"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="切换到生产环境 (wanandroid.com)" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSwitchBaseUrlTest"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="切换到测试环境 (test.wanandroid.com)" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSwitchBaseUrlDev"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="切换到开发环境 (dev.wanandroid.com)" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnShowCurrentBaseUrl"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="查看当前 BaseUrl" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:background="#E0E0E0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缓存管理"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnClearCache"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="清空缓存" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnShowCacheStatus"
+                        style="@style/Widget.AndPrj.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="查看缓存状态" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 信息展示区域 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                app:cardCornerRadius="@dimen/corner_radius_normal"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请求结果"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <!-- RecyclerView 放在 NestedScrollView 中，需要设置固定高度或使用 wrap_content -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="#F5F5F5"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:padding="@dimen/padding_small" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

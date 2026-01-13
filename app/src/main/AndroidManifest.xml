@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 权限请求示例所需权限 -->
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 存储权限（Android 13 以下使用） -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29"
+        tools:ignore="ScopedStorage" />
+
+    <!-- 媒体权限（Android 13+） -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- 通知权限（Android 13+） -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 日历权限 -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <!-- 安装应用权限（Android 8.0+） -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndPrj">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndPrj">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.recycler.RecyclerLayoutActivity"
+            android:exported="false"
+            android:label="布局示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.notify.NotifyDemoActivity"
+            android:exported="false"
+            android:label="消息提示示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.permission.PermissionDemoActivity"
+            android:exported="false"
+            android:label="权限请求示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.DateUtilsDemoActivity"
+            android:exported="false"
+            android:label="日期工具示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.ValidatorDemoActivity"
+            android:exported="false"
+            android:label="校验工具示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.CacheManagerDemoActivity"
+            android:exported="false"
+            android:label="缓存工具示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.FileUtilsDemoActivity"
+            android:exported="false"
+            android:label="文件工具示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.ImageUtilsDemoActivity"
+            android:exported="false"
+            android:label="图片工具示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.NetworkDemoActivity"
+            android:exported="false"
+            android:label="网络请求示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.AppUpdateActivity"
+            android:exported="false"
+            android:label="App升级安装"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.WebViewDemoActivity"
+            android:exported="false"
+            android:label="WebView 示例"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.DownloadManagerActivity"
+            android:exported="false"
+            android:label="下载管理"
+            android:theme="@style/Theme.AndPrj" />
+        <activity
+            android:name=".ui.tool.SimpleWebViewActivity"
+            android:exported="false"
+            android:label="Simple WebView"
+            android:theme="@style/Theme.AndPrj" />
+
+        <!-- FileProvider 配置（用于 Android 7.0+ 文件共享） -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
